@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            prism:ViewModelLocator.AutowireViewModel="True"
+            xmlns:pages="clr-namespace:TransNav.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#2196F3"
+            x:Class="TransNav.Views.MyTabbedPage">
+    <pages:MainPage Title="Page1">
+        <NavigationPage.TitleView>
+            <SearchBar Placeholder="Search" />
+        </NavigationPage.TitleView>x
+    </pages:MainPage>
+    <pages:MainPage Title="Page2">
+        <pages:MainPage.ToolbarItems>
+            <ToolbarItem Text="SomeText" />
+        </pages:MainPage.ToolbarItems>
+    </pages:MainPage>
+</TabbedPage>
