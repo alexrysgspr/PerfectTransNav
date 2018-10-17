@@ -7,7 +7,9 @@ namespace TransNav.Views
         public MyDetailPage()
         {
             InitializeComponent();
+            IsTransparentActionBar = true;
         }
 
         public bool IsTransparentActionBar { get; }
+    }
 }
