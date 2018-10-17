@@ -8,5 +8,6 @@ namespace TransNav.Views
         {
             InitializeComponent();
         }
-    }
+
+        public bool IsTransparentActionBar { get; }
 }
